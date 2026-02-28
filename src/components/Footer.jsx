@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   PaintBucket,
   Facebook,
@@ -9,34 +10,35 @@ import {
   Mail,
   ArrowUp,
 } from 'lucide-react';
+import { contactInfo, socialLinks } from '../data/siteData';
+import WhatsAppIcon from './Common/WhatsAppIcon';
 
-const aboutLinks = [
-  { name: 'Our Story', href: '#about' },
-  { name: 'Latest News', href: '#' },
-  { name: 'Career', href: '#' },
-  { name: 'Team', href: '#' },
-  { name: 'Pricing', href: '#pricing' },
+const quickLinks = [
+  { name: 'Home', path: '/' },
+  { name: 'About Us', path: '/about' },
+  { name: 'Services', path: '/services' },
+  { name: 'Portfolio', path: '/portfolio' },
+  { name: 'Contact', path: '/contact' },
+];
+
+const serviceLinks = [
+  { name: 'Interior Painting', path: '/services' },
+  { name: 'Exterior Painting', path: '/services' },
+  { name: 'Wall Screeding & POP', path: '/services' },
+  { name: 'Wallpaper Installation', path: '/services' },
+  { name: 'Colour Consultation', path: '/services' },
 ];
 
 const legalLinks = [
   { name: 'Terms of Service', href: '#' },
   { name: 'Privacy Policy', href: '#' },
-  { name: 'Cookie Policy', href: '#' },
-  { name: 'Sitemap', href: '#' },
-];
-
-const supportLinks = [
-  { name: 'Help Center', href: '#' },
-  { name: 'FAQ', href: '#' },
-  { name: 'Contact Us', href: '#contact' },
-  { name: 'Live Chat', href: '#' },
 ];
 
 const socials = [
-  { icon: Facebook, href: '#' },
-  { icon: Twitter, href: '#' },
-  { icon: Instagram, href: '#' },
-  { icon: Linkedin, href: '#' },
+  { icon: Facebook, href: socialLinks.facebook },
+  { icon: Twitter, href: socialLinks.twitter },
+  { icon: Instagram, href: socialLinks.instagram },
+  { icon: Linkedin, href: socialLinks.linkedin },
 ];
 
 export default function Footer() {
@@ -47,35 +49,43 @@ export default function Footer() {
   return (
     <footer className="bg-navy-950 pt-16 lg:pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           {/* Brand Column */}
-          <div className="lg:col-span-2">
-            <a href="#home" className="flex items-center gap-2 mb-5">
+          <div>
+            <Link to="/" className="flex items-center gap-2 mb-5">
               <div className="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center">
                 <PaintBucket className="w-5 h-5 text-navy-950" />
               </div>
               <span className="text-xl font-bold text-white tracking-tight">
                 Classic <span className="text-gold-400">Touch</span>
               </span>
-            </a>
+            </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
-              Transforming spaces with premium painting services since 1998. Your
-              trusted partner for all residential and commercial painting needs.
+              Professional painting and finishing services across Nigeria. Transforming spaces with quality craftsmanship.
             </p>
 
             {/* Contact info */}
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <MapPin className="w-4 h-4 text-gold-500 shrink-0" />
-                <span>123 Paint Street, Color City, ST 12345</span>
+                <span>{contactInfo.address}</span>
               </div>
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <Phone className="w-4 h-4 text-gold-500 shrink-0" />
-                <span>+1 (234) 567-890</span>
+                <span>{contactInfo.phone}</span>
               </div>
+              <a
+                href={contactInfo.whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-white/50 hover:text-[#25D366] text-sm transition-colors group"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-[#25D366] shrink-0" />
+                <span>WhatsApp: {contactInfo.whatsapp}</span>
+              </a>
               <div className="flex items-center gap-3 text-white/50 text-sm">
                 <Mail className="w-4 h-4 text-gold-500 shrink-0" />
-                <span>info@classictouch.com</span>
+                <span>{contactInfo.email}</span>
               </div>
             </div>
 
@@ -85,6 +95,8 @@ export default function Footer() {
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 bg-white/5 hover:bg-gold-500 rounded-lg flex items-center justify-center transition-all hover:-translate-y-0.5"
                 >
                   <social.icon className="w-4 h-4 text-white" />
@@ -93,51 +105,51 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* About Us */}
+          {/* Quick Links */}
           <div>
             <h4 className="text-white font-bold text-sm mb-5 uppercase tracking-wider">
-              About Us
+              Quick Links
             </h4>
             <ul className="space-y-3">
-              {aboutLinks.map((link, index) => (
+              {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.path}
                     className="text-white/50 hover:text-gold-400 text-sm transition-colors"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Legal Stuff */}
+          {/* Services */}
           <div>
             <h4 className="text-white font-bold text-sm mb-5 uppercase tracking-wider">
-              Legal Stuff
+              Our Services
+            </h4>
+            <ul className="space-y-3">
+              {serviceLinks.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    to={link.path}
+                    className="text-white/50 hover:text-gold-400 text-sm transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h4 className="text-white font-bold text-sm mb-5 uppercase tracking-wider">
+              Legal
             </h4>
             <ul className="space-y-3">
               {legalLinks.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-white/50 hover:text-gold-400 text-sm transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Customer Support */}
-          <div>
-            <h4 className="text-white font-bold text-sm mb-5 uppercase tracking-wider">
-              Customer Support
-            </h4>
-            <ul className="space-y-3">
-              {supportLinks.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
@@ -154,7 +166,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs">
-            © {new Date().getFullYear()} Classic Touch. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Classic Touch. All Rights Reserved.
           </p>
           <button
             onClick={scrollToTop}

@@ -1,24 +1,24 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, PaintBucket } from 'lucide-react';
-
-const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Pricing', href: '#pricing' },
-  { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Contact', href: '#contact' },
-];
+import { navLinks, contactInfo } from '../data/siteData';
+import WhatsAppIcon from './Common/WhatsAppIcon';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
 
   return (
     <nav
@@ -31,43 +31,47 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2 group">
+          <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 bg-gold-500 rounded-lg flex items-center justify-center group-hover:bg-gold-400 transition-colors">
               <PaintBucket className="w-5 h-5 text-navy-950" />
             </div>
             <span className="text-xl font-bold text-white tracking-tight">
               Classic <span className="text-gold-400">Touch</span>
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
-                className="text-white/80 hover:text-gold-400 text-sm font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-gold-400 after:transition-all hover:after:w-full"
+                to={link.path}
+                className={`text-sm font-medium transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-0.5 after:bg-gold-400 after:transition-all ${
+                  location.pathname === link.path
+                    ? 'text-gold-400 after:w-full'
+                    : 'text-white/80 hover:text-gold-400 after:w-0 hover:after:w-full'
+                }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Right side */}
           <div className="hidden lg:flex items-center gap-6">
             <a
-              href="tel:+1234567890"
+              href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
               className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
             >
               <Phone className="w-4 h-4 text-gold-400" />
-              <span className="text-sm font-medium">+1 (234) 567-890</span>
+              <span className="text-sm font-medium">{contactInfo.phone}</span>
             </a>
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="bg-gold-500 hover:bg-gold-400 text-navy-950 px-6 py-2.5 rounded-lg text-sm font-bold transition-all hover:shadow-lg hover:shadow-gold-500/25 hover:-translate-y-0.5"
             >
               Get A Quote
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -88,30 +92,41 @@ export default function Navbar() {
         >
           <div className="bg-navy-900/95 backdrop-blur-md rounded-xl p-4 space-y-1">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="block px-4 py-2.5 text-white/80 hover:text-white hover:bg-white/10 rounded-lg text-sm font-medium transition-colors"
+                to={link.path}
+                className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                  location.pathname === link.path
+                    ? 'text-gold-400 bg-white/10'
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <div className="pt-3 mt-3 border-t border-white/10 space-y-3">
               <a
-                href="tel:+1234567890"
+                href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
                 className="flex items-center gap-2 px-4 py-2 text-white/80"
               >
                 <Phone className="w-4 h-4 text-gold-400" />
-                <span className="text-sm">+1 (234) 567-890</span>
+                <span className="text-sm">{contactInfo.phone}</span>
               </a>
               <a
-                href="#contact"
-                onClick={() => setIsOpen(false)}
+                href={contactInfo.whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 text-white/80 hover:text-[#25D366] transition-colors"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                <span className="text-sm">WhatsApp Us</span>
+              </a>
+              <Link
+                to="/contact"
                 className="block text-center bg-gold-500 text-navy-950 px-6 py-2.5 rounded-lg text-sm font-bold"
               >
                 Get A Quote
-              </a>
+              </Link>
             </div>
           </div>
         </div>

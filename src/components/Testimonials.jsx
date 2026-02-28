@@ -1,31 +1,5 @@
-import { Star, Quote } from 'lucide-react';
-
-const testimonials = [
-  {
-    name: 'Sarah Johnson',
-    role: 'Homeowner',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face',
-    rating: 5,
-    title: 'Loving the color',
-    text: 'Classic Touch completely transformed our living room. The attention to detail was incredible and the team was professional from start to finish. Highly recommended!',
-  },
-  {
-    name: 'Michael Chen',
-    role: 'Business Owner',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
-    rating: 5,
-    title: 'Loving the color',
-    text: 'We hired Classic Touch for our office renovation and the results exceeded our expectations. The color consultation was fantastic and the finish is flawless.',
-  },
-  {
-    name: 'Emily Thompson',
-    role: 'Interior Designer',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
-    rating: 5,
-    title: 'Loving the color',
-    text: 'As a designer, I have high standards. Classic Touch met every single one. Their craftsmen are truly skilled and the premium paint quality really shows.',
-  },
-];
+import { Star, Quote, User } from 'lucide-react';
+import { testimonials } from '../data/siteData';
 
 export default function Testimonials() {
   return (
@@ -34,15 +8,14 @@ export default function Testimonials() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="inline-block bg-gold-500/10 text-gold-600 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
-            Reviews
+            Testimonials
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-950 mb-4">
-            What Our Valuable Customers{' '}
-            <span className="text-gold-500">Say</span>
+            What our clients{' '}
+            <span className="text-gold-500">say</span>
           </h2>
           <p className="text-gray-500 leading-relaxed">
-            Don&apos;t just take our word for it. Here&apos;s what our satisfied customers
-            have to say about their experience.
+            Real feedback from our valued customers. Testimonials will be updated once client reviews are received.
           </p>
         </div>
 
@@ -68,23 +41,24 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              {/* Title */}
-              <h4 className="text-lg font-bold text-navy-950 mb-3">
-                {testimonial.title}
-              </h4>
-
               {/* Text */}
-              <p className="text-gray-500 text-sm leading-relaxed mb-6">
-                {testimonial.text}
+              <p className="text-gray-500 text-sm leading-relaxed mb-6 italic">
+                &ldquo;{testimonial.text}&rdquo;
               </p>
 
               {/* Author */}
               <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
-                <img
-                  src={testimonial.avatar}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover ring-2 ring-gold-500/20"
-                />
+                {testimonial.avatar ? (
+                  <img
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    className="w-12 h-12 rounded-full object-cover ring-2 ring-gold-500/20"
+                  />
+                ) : (
+                  <div className="w-12 h-12 rounded-full bg-navy-950/5 flex items-center justify-center ring-2 ring-gold-500/20">
+                    <User className="w-5 h-5 text-navy-950/30" />
+                  </div>
+                )}
                 <div>
                   <div className="text-sm font-bold text-navy-950">
                     {testimonial.name}

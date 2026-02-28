@@ -1,33 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown, MessageCircleQuestion } from 'lucide-react';
-
-const faqs = [
-  {
-    question: 'Do you have a physical office?',
-    answer:
-      'Yes, we have a main office located in downtown along with several satellite offices across the city. You\'re welcome to visit us during business hours for a free consultation.',
-  },
-  {
-    question: 'Do you provide free samples?',
-    answer:
-      'Absolutely! We provide free color samples and test patches so you can see exactly how the colors look on your walls before committing to the full project.',
-  },
-  {
-    question: 'Do you provide home servicing?',
-    answer:
-      'Yes, all our services are provided at your location. Our team comes fully equipped with all necessary tools, materials, and protective equipment to complete the job on-site.',
-  },
-  {
-    question: 'Do you have any return policy?',
-    answer:
-      'We stand behind our work 100%. If you\'re not satisfied with the results, we\'ll redo the work at no additional cost. We also offer a warranty ranging from 1 to 5 years depending on the service package.',
-  },
-  {
-    question: 'How long does a typical project take?',
-    answer:
-      'Project timelines vary based on scope. A single room typically takes 1-2 days, while a full house can take 1-2 weeks. We always provide a detailed timeline before starting any project.',
-  },
-];
+import { faqs, contactInfo } from '../data/siteData';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -45,15 +18,14 @@ export default function FAQ() {
               FAQ
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-              Find frequently asked{' '}
-              <span className="text-gold-400">questions</span> here
+              Frequently asked{' '}
+              <span className="text-gold-400">questions</span>
             </h2>
             <p className="text-white/50 leading-relaxed mb-8">
               Can&apos;t find the answer you&apos;re looking for? Feel free to reach
-              out to our friendly team.
+              out to our team.
             </p>
 
-            {/* FAQ decoration image */}
             <div className="hidden lg:flex items-center gap-4 bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10">
               <div className="w-14 h-14 bg-gold-500/20 rounded-xl flex items-center justify-center shrink-0">
                 <MessageCircleQuestion className="w-7 h-7 text-gold-400" />
@@ -62,8 +34,8 @@ export default function FAQ() {
                 <div className="text-white font-semibold text-sm">Still have questions?</div>
                 <div className="text-white/50 text-sm">
                   Contact us at{' '}
-                  <a href="mailto:info@classictouch.com" className="text-gold-400 hover:underline">
-                    info@classictouch.com
+                  <a href={`mailto:${contactInfo.email}`} className="text-gold-400 hover:underline">
+                    {contactInfo.email}
                   </a>
                 </div>
               </div>

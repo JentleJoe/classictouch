@@ -1,14 +1,13 @@
+import { Link } from 'react-router-dom';
 import { ArrowRight, Play, Users, Briefcase, ThumbsUp } from 'lucide-react';
+import { heroData, contactInfo } from '../data/siteData';
+import WhatsAppIcon from './Common/WhatsAppIcon';
 
-const stats = [
-  { icon: Users, value: '50+', label: 'Satisfied Customers' },
-  { icon: Briefcase, value: '100+', label: 'Projects Completed' },
-  { icon: ThumbsUp, value: '98%', label: 'Positive Reviews' },
-];
+const statIcons = [Users, Briefcase, ThumbsUp];
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen bg-navy-950 overflow-hidden">
+    <section className="relative min-h-screen bg-navy-950 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -31,16 +30,16 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 bg-gold-500/15 border border-gold-500/30 rounded-full px-4 py-1.5 mb-6">
               <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse" />
               <span className="text-gold-400 text-sm font-medium">
-                Professional Painting Services
+                {heroData.badge}
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] mb-6">
-              Paint your home
+              {heroData.heading.line1}
               <br />
-              like a{' '}
+              {heroData.heading.line2}{' '}
               <span className="text-gold-400 relative">
-                dream
+                {heroData.heading.highlight}
                 <svg
                   className="absolute -bottom-2 left-0 w-full"
                   viewBox="0 0 200 12"
@@ -53,48 +52,48 @@ export default function Hero() {
                     strokeLinecap="round"
                   />
                 </svg>
-              </span>{' '}
-              house
+              </span>
             </h1>
 
             <p className="text-white/60 text-lg max-w-lg mb-8 leading-relaxed">
-              Give your space the transformation it deserves with our premium painting
-              services. We bring color, life, and elegance to every corner of your home
-              with expert craftsmanship.
+              {heroData.description}
             </p>
 
             <div className="flex flex-wrap gap-4 mb-16">
-              <a
-                href="#services"
+              <Link
+                to="/services"
                 className="group inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-400 text-navy-950 px-8 py-4 rounded-xl text-sm font-bold transition-all hover:shadow-xl hover:shadow-gold-500/25 hover:-translate-y-0.5"
               >
-                Explore More
+                Our Services
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
               <a
-                href="#about"
-                className="group inline-flex items-center gap-3 border-2 border-white/20 hover:border-white/40 text-white px-8 py-4 rounded-xl text-sm font-bold transition-all hover:-translate-y-0.5"
+                href={contactInfo.whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl text-sm font-bold transition-all hover:shadow-xl hover:shadow-green-500/25 hover:-translate-y-0.5"
               >
-                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
-                  <Play className="w-4 h-4 fill-white" />
-                </div>
-                Watch Video
+                <WhatsAppIcon className="w-5 h-5" />
+                Chat With Us
               </a>
             </div>
 
             {/* Stats */}
             <div className="flex flex-wrap gap-8 lg:gap-12">
-              {stats.map((stat, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-gold-500/15 rounded-xl flex items-center justify-center">
-                    <stat.icon className="w-5 h-5 text-gold-400" />
+              {heroData.stats.map((stat, index) => {
+                const Icon = statIcons[index];
+                return (
+                  <div key={index} className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-gold-500/15 rounded-xl flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-gold-400" />
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-white">{stat.value}</div>
+                      <div className="text-xs text-white/50 font-medium">{stat.label}</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-2xl font-bold text-white">{stat.value}</div>
-                    <div className="text-xs text-white/50 font-medium">{stat.label}</div>
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
@@ -119,8 +118,8 @@ export default function Hero() {
                   <ThumbsUp className="w-6 h-6 text-navy-950" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-navy-950">Top Rated</div>
-                  <div className="text-xs text-gray-500">4.9 ★ (2.5k reviews)</div>
+                  <div className="text-sm font-bold text-navy-950">Quality Service</div>
+                  <div className="text-xs text-gray-500">Trusted across Nigeria</div>
                 </div>
               </div>
             </div>

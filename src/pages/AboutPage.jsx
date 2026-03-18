@@ -99,7 +99,7 @@ export default function AboutPage() {
               What sets us <span className="text-gold-400">apart</span>
             </h2>
             <p className="text-white/50 leading-relaxed">
-              We combine quality materials, skilled professionals, and a relentless commitment to customer satisfaction.
+              We combine engineering-level surface preparation, bespoke decorative detailing, and disciplined project management to deliver finishes that look premium and perform over time.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

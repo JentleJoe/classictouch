@@ -188,7 +188,7 @@ export default function ServicesPage() {
               Where we <span className="text-gold-400">operate</span>
             </h2>
             <p className="text-white/50 leading-relaxed">
-              Classic Touch serves clients across major cities in Nigeria. Contact us to confirm coverage in your area.
+              Classic Touch serves clients nationwide across all states in Nigeria. Contact us to confirm availability and timelines for your specific location.
             </p>
           </div>
 

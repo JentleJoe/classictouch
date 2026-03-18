@@ -61,7 +61,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
-              Professional painting and finishing services across Nigeria. Transforming spaces with quality craftsmanship.
+              Engineered wall treatments, decorative finishes, and professional painting services across Nigeria — designed to inspire and built to endure.
             </p>
 
             {/* Contact info */}

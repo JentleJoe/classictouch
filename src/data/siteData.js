@@ -5,22 +5,24 @@
 
 // ─── Contact Info ─────────────────────────────────────────────
 export const contactInfo = {
-  phone: '+234 815 301 8208',
+  // Hotline for calls
+  phone: '+234 806 940 1451',
+  // Primary WhatsApp line
   whatsapp: '+234 815 301 8208',
   whatsappLink:
-    'https://wa.me/2348153018208?text=Hello%2C%20I%27m%20interested%20in%20your%20painting%20services.',
+    "https://wa.me/2348153018208?text=Hello%2C%20I%27m%20interested%20in%20your%20wall%20treatment%20and%20painting%20services.",
   email: 'info@classictouchpaints.com',
-  address: '[Office Address], Lagos, Nigeria',
+  address: 'Nigeria (mobile service across all states)',
   workingHours: 'Mon – Sat: 8:00 AM – 6:00 PM',
 };
 
-// ─── Social Media Links (Placeholders) ────────────────────────
+// ─── Social Media Links ───────────────────────────────────────
 export const socialLinks = {
   facebook: '#',
-  instagram: '#',
+  instagram: 'https://www.instagram.com/Victor_classic_touch',
   twitter: '#',
   linkedin: '#',
-  tiktok: '#',
+  tiktok: 'https://www.tiktok.com/@usiagu',
 };
 
 // ─── Navigation ───────────────────────────────────────────────
@@ -34,14 +36,14 @@ export const navLinks = [
 
 // ─── Hero Section ─────────────────────────────────────────────
 export const heroData = {
-  badge: 'Professional Painting Services in Nigeria',
+  badge: 'Engineered aesthetic wall finishes across Nigeria',
   heading: {
     line1: 'Transform your',
     line2: 'space with a',
     highlight: 'Classic Touch',
   },
   description:
-    'We deliver premium painting and finishing services across Nigeria. From residential homes to commercial properties — trust us to bring colour, life, and elegance to every surface.',
+    'We merge engineering-level surface preparation with bespoke decorative finishes, delivering interiors and exteriors that are visually refined, structurally resilient, and built to perform in the Nigerian climate.',
   stats: [
     { value: '—', label: 'Satisfied Customers' },
     { value: '—', label: 'Projects Completed' },
@@ -52,80 +54,88 @@ export const heroData = {
 // ─── About Section ────────────────────────────────────────────
 export const aboutData = {
   tagline: 'About Classic Touch',
-  heading: 'Your trusted partner for quality painting & finishing',
+  heading: 'Engineered aesthetics for walls that inspire and endure',
   paragraphs: [
-    'Classic Touch is a professional painting and finishing company based in Nigeria. We specialise in transforming residential and commercial spaces with premium-quality paints and expert craftsmanship.',
-    'Our mission, values, and unique story will be shared here once confirmed by the team. We are committed to delivering excellence on every project we undertake.',
+    'Classic Touch is a specialist wall treatment and painting brand that sits at the intersection of technical engineering precision and bespoke aesthetic detailing. We transform standard painting into a high-performance surface treatment service for both interior and exterior spaces.',
+    'Rather than just applying colour, we analyse substrate conditions, moisture levels, and coating adhesion to ensure every finish is structurally sound and long‑lasting in the Nigerian climate. Every edge, corner, and texture is treated with surgical accuracy, delivering premium results that elevate your space and protect your property.',
   ],
   highlights: [
-    'Professional & experienced painters',
-    'Premium quality paints & materials',
-    'Timely project delivery',
-    'Clean and respectful work ethic',
+    'Engineering-led surface preparation',
+    'Bespoke decorative wall finishes',
+    'Professional project management',
+    'Clean, precise and timely execution',
   ],
-  // Placeholder — replace with actual years
-  yearsExperience: '—',
+  yearsExperience: '10+',
   mission:
-    '[Mission statement to be provided by client. E.g., "To deliver world-class painting and finishing services that exceed our clients\' expectations while maintaining the highest standards of professionalism and integrity."]',
+    'To be the premier choice for interior and exterior transformation by consistently delivering superior craftsmanship, innovative decorative solutions, and unparalleled attention to detail, while upholding the highest standards of professional integrity and client satisfaction.',
   vision:
-    '[Vision statement to be provided by client.]',
+    'To redefine wall and surface finishing in Nigeria through our “Engineered Aesthetics” model — where every project combines technical precision, material science, and bespoke design to create spaces that are designed to inspire and built to endure.',
 };
 
 // ─── Services ─────────────────────────────────────────────────
 export const services = [
   {
-    id: 'interior-painting',
+    id: 'wall-treatments',
     icon: 'Sofa',
-    title: 'Interior Painting',
+    title: 'Wall Treatments',
     shortDescription:
-      'Transform your indoor spaces with premium interior painting that reflects your style and personality.',
+      'Professional preparation and treatment of wall surfaces to create a smooth, durable base for any finish.',
     fullDescription:
-      '[Detailed description of interior painting services to be provided by client. Include wall painting, ceiling painting, accent walls, etc.]',
+      'We handle full wall preparation from scraping and repairs to priming and levelling. By analysing substrate conditions and moisture levels, we ensure that every coating bonds correctly and performs as intended, preventing future peeling, bubbling, or cracking.',
   },
   {
-    id: 'exterior-painting',
-    icon: 'Home',
-    title: 'Exterior Painting',
-    shortDescription:
-      'Protect and beautify your building exterior with durable, weather-resistant paint finishes.',
-    fullDescription:
-      '[Detailed description of exterior painting services to be provided by client.]',
-  },
-  {
-    id: 'wall-screeding',
+    id: 'screeding-skimming',
     icon: 'Wrench',
-    title: 'Wall Screeding & POP',
+    title: 'Screeding & Skimming',
     shortDescription:
-      'Achieve smooth, flawless wall surfaces with our professional screeding and POP finishing.',
+      'High‑precision screeding and skimming for perfectly flat, paint‑ready walls and ceilings.',
     fullDescription:
-      '[Detailed description to be provided by client.]',
+      'Using tested screeding systems and skimming techniques, we eliminate waves, undulations, and imperfections on your walls. The result is a flawless, even surface that enhances the final paint or decorative finish and stands up to close inspection.',
   },
   {
-    id: 'wallpaper',
+    id: 'wallpaper-installation',
     icon: 'Palette',
-    title: 'Wallpaper Installation',
+    title: 'Professional Wallpaper Installation',
     shortDescription:
-      'Expert wallpaper selection and installation to add texture, pattern, and character to your walls.',
+      'Expert wallpaper selection and installation that adds depth, pattern, and luxury to your walls.',
     fullDescription:
-      '[Detailed description to be provided by client.]',
+      'From subtle textures to bold feature walls, we handle surface preparation, alignment, and finishing details so your wallpapers sit flat, seamless, and secure. We also advise on materials that suit your space, lighting, and maintenance expectations.',
   },
   {
-    id: 'roof-painting',
-    icon: 'Warehouse',
-    title: 'Roof Coating & Painting',
-    shortDescription:
-      'Extend the life of your roof with specialised protective coatings and colour finishes.',
-    fullDescription:
-      '[Detailed description to be provided by client.]',
-  },
-  {
-    id: 'design-consultation',
+    id: 'decorative-painting',
     icon: 'Paintbrush',
-    title: 'Colour & Design Consultation',
+    title: 'Decorative Paintings & Designs',
     shortDescription:
-      'Work with our colour experts to choose the perfect palette for your space, lighting, and taste.',
+      'Specialised decorative systems including travertine, stucco, limewash, rocky effects and more.',
     fullDescription:
-      '[Detailed description to be provided by client.]',
+      'We design and apply bespoke decorative finishes that go beyond standard paint — from textured travertine and polished stucco to limewash and rocky designs. Each finish is engineered for both beauty and durability, tailored to your interior or exterior concept.',
+  },
+  {
+    id: 'painting-services',
+    icon: 'Home',
+    title: 'Professional Painting Services',
+    shortDescription:
+      'Complete interior and exterior painting for homes, offices, and commercial properties.',
+    fullDescription:
+      'We deliver clean, uniform paintwork using premium products selected for Nigerian weather conditions. From walls and ceilings to exterior façades, our process prioritises coverage, adhesion, colour consistency, and long‑term protection for your asset.',
+  },
+  {
+    id: 'interior-consultation',
+    icon: 'Sofa',
+    title: 'Interior Consultation',
+    shortDescription:
+      'Guided interior and wall‑finish consultation to align aesthetics with function and lifestyle.',
+    fullDescription:
+      'We help you make informed decisions on colours, textures, and finishes based on your space, lighting, and usage. Our consultations translate your ideas into a practical specification that our team can execute with precision.',
+  },
+  {
+    id: 'project-management',
+    icon: 'Warehouse',
+    title: 'Project Management & Supervision',
+    shortDescription:
+      'End‑to‑end coordination and technical supervision for wall and painting works.',
+    fullDescription:
+      'From planning to final handover, we coordinate artisans, materials, and timelines to keep your project on track. Our supervision bridges the “knowledge‑practice gap” by ensuring that specifications are followed on site and every detail meets our engineered standards.',
   },
 ];
 
@@ -133,9 +143,9 @@ export const services = [
 export const additionalServices = [
   {
     icon: 'Paintbrush',
-    title: 'Wall Texturing',
+    title: 'Advanced Wall Texturing',
     description:
-      'Add dimension and character to your walls with professional texturing — from smooth finishes to bold patterns.',
+      'Custom textures and feature walls that introduce depth, shadow, and character while remaining easy to maintain.',
   },
   {
     icon: 'SprayCan',
@@ -145,9 +155,9 @@ export const additionalServices = [
   },
   {
     icon: 'Palette',
-    title: 'Colour Consultation',
+    title: 'Colour & Finish Planning',
     description:
-      'Our expert consultants help you choose the perfect palette to complement your space, lighting, and style.',
+      'Structured guidance on colour palettes and finish combinations to create cohesive, high‑performance interiors and exteriors.',
   },
 ];
 
@@ -180,13 +190,7 @@ export const processSteps = [
 ];
 
 // ─── Service Areas ────────────────────────────────────────────
-export const serviceAreas = [
-  'Lagos',
-  'Abuja',
-  'Port Harcourt',
-  'Ibadan',
-  '[Other cities to be confirmed]',
-];
+export const serviceAreas = ['Nationwide – all states in Nigeria'];
 
 // ─── Portfolio / Gallery (Placeholders) ───────────────────────
 export const portfolioItems = [
@@ -286,7 +290,7 @@ export const faqs = [
   {
     question: 'What areas in Nigeria do you serve?',
     answer:
-      'We currently serve Lagos, Abuja, Port Harcourt, Ibadan, and surrounding areas. Contact us to confirm availability in your location.',
+      'We serve clients across all states in Nigeria. Contact us to confirm availability and timelines for your specific location.',
   },
   {
     question: 'Do you provide free quotations?',
@@ -318,31 +322,31 @@ export const faqs = [
 // ─── Why Choose Us / USPs ─────────────────────────────────────
 export const whyChooseUs = [
   {
-    title: 'Quality Materials',
+    title: 'Engineered Aesthetics',
     description:
-      'We use only premium paints and finishing materials from trusted brands to ensure lasting results.',
+      'We approach every wall as a technical surface, combining material science, substrate analysis, and design thinking to create finishes that are both beautiful and structurally sound.',
   },
   {
-    title: 'Experienced Team',
+    title: 'Precision & Detailing',
     description:
-      'Our painters and project managers bring years of hands-on experience to every project.',
+      'Every edge, corner, and junction is treated with surgical accuracy, eliminating paint overlaps, rough lines, and unfinished transitions.',
   },
   {
-    title: 'Timely Delivery',
+    title: 'Professional Execution',
     description:
-      'We respect your time. Projects are completed on schedule with no compromise on quality.',
+      'From surface preparation to final coat, we maintain strict process control so that what is specified is exactly what is delivered on site.',
   },
   {
-    title: 'Clean Workmanship',
+    title: 'Value & Time Management',
     description:
-      'We leave your space spotless. Our team takes care to protect your furniture and property during work.',
+      'Our focus on quality surfaces, clear communication, and disciplined timelines ensures you get premium results without unnecessary delays.',
   },
 ];
 
 // ─── Stats (Placeholders) ─────────────────────────────────────
 export const companyStats = [
-  { value: '—', label: 'Projects Completed' },
-  { value: '—', label: 'Years Experience' },
-  { value: '—', label: 'Happy Clients' },
-  { value: '—', label: 'Service Areas' },
+  { value: '100+', label: 'Projects Completed' },
+  { value: '10+', label: 'Years Experience' },
+  { value: '95%', label: 'Repeat & Referral Clients' },
+  { value: 'Nationwide', label: 'Service Coverage' },
 ];

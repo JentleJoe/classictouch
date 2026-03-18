@@ -11,7 +11,7 @@ export const contactInfo = {
   whatsapp: '+234 815 301 8208',
   whatsappLink:
     "https://wa.me/2348153018208?text=Hello%2C%20I%27m%20interested%20in%20your%20wall%20treatment%20and%20painting%20services.",
-  email: 'info@glacetouchpaints.com',
+  email: 'glacetouch@yahoo.com',
   address: 'Nigeria (mobile service across all states)',
   workingHours: 'Mon – Sat: 8:00 AM – 6:00 PM',
 };

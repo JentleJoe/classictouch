@@ -172,7 +172,7 @@ This project is proprietary to Glacetouch Painting Services.
 
 ## 👨‍💼 Support
 
-For support, email: info@glacetouch.com or call (555) 123-4567
+For support, email: glacetouch@yahoo.com or call (555) 123-4567
 
 ---
 

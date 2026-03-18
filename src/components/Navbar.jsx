@@ -36,7 +36,7 @@ export default function Navbar() {
               <PaintBucket className="w-5 h-5 text-navy-950" />
             </div>
             <span className="text-xl font-bold text-white tracking-tight">
-              Classic <span className="text-gold-400">Touch</span>
+              <span className="text-gold-400">Glace</span>touch
             </span>
           </Link>
 

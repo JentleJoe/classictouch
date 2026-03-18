@@ -9,7 +9,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         title="About Us"
-        subtitle="Get to know Classic Touch — our story, our team, and our commitment to excellence."
+        subtitle="Get to know Glacetouch — our story, our team, and our commitment to excellence."
       />
 
       {/* About Content */}
@@ -21,7 +21,7 @@ export default function AboutPage() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&h=700&fit=crop"
-                  alt="Classic Touch team at work"
+                  alt="Glacetouch team at work"
                   className="w-full h-[500px] object-cover"
                 />
               </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
               Meet the <span className="text-gold-500">team</span>
             </h2>
             <p className="text-gray-500 leading-relaxed">
-              The talented professionals behind every Classic Touch project.
+              The talented professionals behind every Glacetouch project.
             </p>
           </div>
 

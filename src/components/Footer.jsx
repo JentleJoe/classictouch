@@ -57,7 +57,7 @@ export default function Footer() {
                 <PaintBucket className="w-5 h-5 text-navy-950" />
               </div>
               <span className="text-xl font-bold text-white tracking-tight">
-                Classic <span className="text-gold-400">Touch</span>
+                <span className="text-gold-400">Glace</span>touch
               </span>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
@@ -166,7 +166,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs">
-            &copy; {new Date().getFullYear()} Classic Touch. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Glacetouch. All Rights Reserved.
           </p>
           <button
             onClick={scrollToTop}

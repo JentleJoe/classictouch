@@ -1,6 +1,6 @@
-# Classic Touch - Professional Painting Services Website
+# Glacetouch - Professional Painting Services Website
 
-A modern, pixel-perfect website for Classic Touch painting services, built with React, Tailwind CSS, and Vite.
+A modern, pixel-perfect website for Glacetouch painting services, built with React, Tailwind CSS, and Vite.
 
 ## 🎨 Features
 
@@ -168,12 +168,12 @@ npm run dev
 
 ## 📄 License
 
-This project is proprietary to Classic Touch Painting Services.
+This project is proprietary to Glacetouch Painting Services.
 
 ## 👨‍💼 Support
 
-For support, email: info@classictouch.com or call (555) 123-4567
+For support, email: info@glacetouch.com or call (555) 123-4567
 
 ---
 
-**Built with ❤️ for Classic Touch Painting Services**
+**Built with ❤️ for Glacetouch Painting Services**

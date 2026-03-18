@@ -93,7 +93,7 @@ export default function ServicesPage() {
                 <span className="text-gold-500">offer</span>
               </h2>
               <p className="text-gray-500 leading-relaxed mb-8">
-                Beyond our core painting services, Classic Touch offers specialised solutions to meet all your property finishing needs.
+                Beyond our core painting services, Glacetouch offers specialised solutions to meet all your property finishing needs.
               </p>
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <img
@@ -188,7 +188,7 @@ export default function ServicesPage() {
               Where we <span className="text-gold-400">operate</span>
             </h2>
             <p className="text-white/50 leading-relaxed">
-              Classic Touch serves clients nationwide across all states in Nigeria. Contact us to confirm availability and timelines for your specific location.
+              Glacetouch serves clients nationwide across all states in Nigeria. Contact us to confirm availability and timelines for your specific location.
             </p>
           </div>
 

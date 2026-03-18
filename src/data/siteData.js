@@ -1,5 +1,5 @@
 /**
- * Centralized placeholder data for Classic Touch website.
+ * Centralized placeholder data for Glacetouch website.
  * TODO: Replace all placeholder content with actual client data once received.
  */
 
@@ -11,7 +11,7 @@ export const contactInfo = {
   whatsapp: '+234 815 301 8208',
   whatsappLink:
     "https://wa.me/2348153018208?text=Hello%2C%20I%27m%20interested%20in%20your%20wall%20treatment%20and%20painting%20services.",
-  email: 'info@classictouchpaints.com',
+  email: 'info@glacetouchpaints.com',
   address: 'Nigeria (mobile service across all states)',
   workingHours: 'Mon – Sat: 8:00 AM – 6:00 PM',
 };
@@ -40,7 +40,7 @@ export const heroData = {
   heading: {
     line1: 'Transform your',
     line2: 'space with a',
-    highlight: 'Classic Touch',
+    highlight: 'Glacetouch',
   },
   description:
     'We merge engineering-level surface preparation with bespoke decorative finishes, delivering interiors and exteriors that are visually refined, structurally resilient, and built to perform in the Nigerian climate.',
@@ -53,10 +53,10 @@ export const heroData = {
 
 // ─── About Section ────────────────────────────────────────────
 export const aboutData = {
-  tagline: 'About Classic Touch',
+  tagline: 'About Glacetouch',
   heading: 'Engineered aesthetics for walls that inspire and endure',
   paragraphs: [
-    'Classic Touch is a specialist wall treatment and painting brand that sits at the intersection of technical engineering precision and bespoke aesthetic detailing. We transform standard painting into a high-performance surface treatment service for both interior and exterior spaces.',
+    'Glacetouch is a specialist wall treatment and painting brand that sits at the intersection of technical engineering precision and bespoke aesthetic detailing. We transform standard painting into a high-performance surface treatment service for both interior and exterior spaces.',
     'Rather than just applying colour, we analyse substrate conditions, moisture levels, and coating adhesion to ensure every finish is structurally sound and long‑lasting in the Nigerian climate. Every edge, corner, and texture is treated with surgical accuracy, delivering premium results that elevate your space and protect your property.',
   ],
   highlights: [
@@ -245,21 +245,21 @@ export const testimonials = [
     role: 'Homeowner, Lagos',
     avatar: null,
     rating: 5,
-    text: '[Testimonial text to be provided. Real client review about their experience with Classic Touch painting services.]',
+    text: '[Testimonial text to be provided. Real client review about their experience with Glacetouch painting services.]',
   },
   {
     name: '[Client Name]',
     role: 'Business Owner, Abuja',
     avatar: null,
     rating: 5,
-    text: '[Testimonial text to be provided. Real client review about their experience with Classic Touch painting services.]',
+    text: '[Testimonial text to be provided. Real client review about their experience with Glacetouch painting services.]',
   },
   {
     name: '[Client Name]',
     role: 'Property Developer, Lagos',
     avatar: null,
     rating: 5,
-    text: '[Testimonial text to be provided. Real client review about their experience with Classic Touch painting services.]',
+    text: '[Testimonial text to be provided. Real client review about their experience with Glacetouch painting services.]',
   },
 ];
 

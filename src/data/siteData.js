@@ -300,17 +300,12 @@ export const faqs = [
   {
     question: 'What brands of paint do you use?',
     answer:
-      '[To be confirmed by client. E.g., "We work with top-quality brands including Dulux, Berger, CAP Plc, and other premium Nigerian and international paint brands."]',
+      'We exclusively use Dulux, Caplux, Revano, Lockmeris, and Rivedil. We’ve selected these brands for their superior coverage, eco-friendly low-VOC formulas, and long-lasting durability against fading and wear.',
   },
   {
     question: 'How long does a typical painting project take?',
     answer:
       'Timelines depend on the scope of work. A standard room takes 1–2 days, while a full building project may take 1–3 weeks. We provide a clear timeline before starting.',
-  },
-  {
-    question: 'Do you offer any warranty on your work?',
-    answer:
-      '[Warranty details to be confirmed by client. E.g., "Yes, we stand behind our work and offer warranties on all painting projects."]',
   },
   {
     question: 'Can I choose my own paint colours?',

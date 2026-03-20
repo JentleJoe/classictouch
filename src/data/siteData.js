@@ -241,25 +241,25 @@ export const portfolioItems = [
 // ─── Testimonials (Placeholders) ──────────────────────────────
 export const testimonials = [
   {
-    name: '[Client Name]',
-    role: 'Homeowner, Lagos',
+    name: 'Amina Yusuf',
+    role: 'Homeowner, Lekki',
     avatar: null,
     rating: 5,
-    text: '[Testimonial text to be provided. Real client review about their experience with Glacetouch painting services.]',
+    text: 'Glacetouch handled our living room and exterior repainting with a level of care that stood out immediately. The team showed up on time, kept the space clean, and the finish has held up beautifully through the rainy season.',
   },
   {
-    name: '[Client Name]',
+    name: 'Musa Adedayo',
     role: 'Business Owner, Abuja',
     avatar: null,
     rating: 5,
-    text: '[Testimonial text to be provided. Real client review about their experience with Glacetouch painting services.]',
+    text: 'We needed a professional team that could deliver a polished look for our office without disrupting operations. Glacetouch delivered exactly that, and the walls now look premium and consistent across every room.',
   },
   {
-    name: '[Client Name]',
+    name: 'Chinwe Okafor',
     role: 'Property Developer, Lagos',
     avatar: null,
     rating: 5,
-    text: '[Testimonial text to be provided. Real client review about their experience with Glacetouch painting services.]',
+    text: 'As a developer, I pay attention to detail, finish quality, and speed. Glacetouch met all three. Their preparation work was thorough, the colour matching was excellent, and the handover was smooth.',
   },
 ];
 

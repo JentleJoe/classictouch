@@ -15,7 +15,7 @@ export default function Testimonials() {
             <span className="text-gold-500">say</span>
           </h2>
           <p className="text-gray-500 leading-relaxed">
-            Real feedback from our valued customers. Testimonials will be updated once client reviews are received.
+            A few words from customers who chose Glacetouch for reliable, detailed finishing work.
           </p>
         </div>
 

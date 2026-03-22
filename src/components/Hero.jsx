@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Play, Users, Briefcase, ThumbsUp } from 'lucide-react';
 import { heroData, contactInfo } from '../data/siteData';
 import WhatsAppIcon from './Common/WhatsAppIcon';
+import heroImg from '../assets/heroImg.jpeg';
 
 const statIcons = [Users, Briefcase, ThumbsUp];
 
@@ -103,7 +104,7 @@ export default function Hero() {
             <div className="absolute -right-4 -bottom-4 w-full h-full bg-gold-500/20 rounded-3xl" />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=700&h=850&fit=crop&crop=top"
+                src={heroImg}
                 alt="Professional painter at work"
                 className="w-full h-[550px] object-cover"
               />

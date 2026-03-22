@@ -13,6 +13,7 @@ import {
 import { services, additionalServices, serviceAreas, processSteps, contactInfo } from '../data/siteData';
 import { ClipboardList, PaintBucket, CheckCircle } from 'lucide-react';
 import PageHeader from '../components/Common/PageHeader';
+import additionalServicesImg from '../assets/additional-services.jpeg';
 import FAQ from '../components/FAQ';
 import WhatsAppIcon from '../components/Common/WhatsAppIcon';
 
@@ -96,11 +97,11 @@ export default function ServicesPage() {
                 Beyond our core painting services, Glacetouch offers specialised solutions to meet all your property finishing needs.
               </p>
               <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=600&h=350&fit=crop"
-                  alt="Paint consultation"
-                  className="w-full h-64 object-cover"
-                />
+                  <img
+                    src={additionalServicesImg}
+                    alt="Paint consultation"
+                    className="w-full h-64 object-cover"
+                  />
               </div>
             </div>
             <div className="space-y-6">

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight } from 'lucide-react';
 import { aboutData } from '../data/siteData';
+import aboutImg from '../assets/about-us.jpeg';
+import glacetouch8 from '../assets/glacetouch8.jpeg';
 
 export default function About() {
   return (
@@ -11,14 +13,14 @@ export default function About() {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&h=700&fit=crop"
+                src={aboutImg}
                 alt="Professional painter working"
                 className="w-full h-[500px] object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-48 h-48 rounded-2xl overflow-hidden border-4 border-white shadow-xl hidden sm:block">
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=300&h=300&fit=crop"
+                src={glacetouch8}
                 alt="Colour palette"
                 className="w-full h-full object-cover"
               />

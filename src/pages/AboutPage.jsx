@@ -3,6 +3,7 @@ import { CheckCircle, ArrowRight, Target, Eye, Award, Clock, TrendingUp, Shield 
 import { aboutData, whyChooseUs, companyStats, teamMembers, contactInfo } from '../data/siteData';
 import PageHeader from '../components/Common/PageHeader';
 import WhatsAppIcon from '../components/Common/WhatsAppIcon';
+import aboutImg from '../assets/about-us.jpeg';
 
 export default function AboutPage() {
   return (
@@ -20,7 +21,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&h=700&fit=crop"
+                  src={aboutImg}
                   alt="Glacetouch team at work"
                   className="w-full h-[500px] object-cover"
                 />

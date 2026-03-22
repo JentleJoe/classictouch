@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Left content */}
           <div className="animate-fade-in-left">
-            <div className="hidden sm:inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8 backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8 backdrop-blur-sm">
               <div className="w-1.5 h-1.5 bg-gold-400 rounded-full animate-pulse" />
               <span className="text-white/80 text-sm font-medium tracking-wide">
                 {heroData.badge}

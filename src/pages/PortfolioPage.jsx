@@ -63,7 +63,7 @@ export default function PortfolioPage() {
     <>
       <PageHeader
         title="Our Portfolio"
-        subtitle="Browse our completed projects and see the Glacetouch difference for yourself."
+        subtitle="Browse our recent projects and see the Glacetouch difference for yourself."
       />
 
       {/* Portfolio Gallery */}

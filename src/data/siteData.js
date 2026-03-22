@@ -36,14 +36,13 @@ export const navLinks = [
 
 // ─── Hero Section ─────────────────────────────────────────────
 export const heroData = {
-  badge: 'Engineered aesthetic wall finishes across Nigeria',
+  badge: 'Professional painting & wall finishes',
   heading: {
     line1: 'Transform your',
     line2: 'space with a',
     highlight: 'Glacetouch',
   },
-  description:
-    'We merge engineering-level surface preparation with bespoke decorative finishes, delivering interiors and exteriors that are visually refined, structurally resilient, and built to perform in the Nigerian climate.',
+  description: 'High quality, durable painting and wall finishes for homes and businesses.',
   stats: [
     { value: '100%', label: 'Good Feedback' },
     { value: '90+', label: 'Projects Completed' },

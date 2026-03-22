@@ -34,7 +34,7 @@ export default function Hero() {
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] mb-6 sm:mb-8">
               {heroData.heading.line1}
               <br />
               {heroData.heading.line2}{' '}
@@ -55,8 +55,13 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="text-white/60 text-lg max-w-lg mb-4 leading-relaxed">
+            <p className="block lg:hidden text-white/60 text-lg max-w-lg mb-4 leading-relaxed">
               {heroData.description}
+            </p>
+
+            {/* Desktop-only expanded description */}
+            <p className="hidden lg:block text-white/60 text-lg max-w-2xl mb-8 leading-relaxed">
+              We merge engineering level surface preparation with bespoke decorative finishes, delivering interiors and exteriors that are visually refined, structurally resilient, and built to perform in the Nigerian climate.
             </p>
 
             {/* Mobile image (shows above CTAs on small screens) */}

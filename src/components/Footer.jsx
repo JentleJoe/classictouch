@@ -165,9 +165,20 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/40 text-xs">
-            &copy; {new Date().getFullYear()} Glacetouch. All Rights Reserved.
-          </p>
+          <div className="text-center sm:text-left text-white/40 text-xs space-y-1">
+            <p>&copy; {new Date().getFullYear()} Glacetouch. All Rights Reserved.</p>
+            <p>
+              Built by{' '}
+              <a
+                href="https://joshuaoseghale.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold-400 hover:text-gold-300 transition-colors"
+              >
+                Joshua Oseghale
+              </a>
+            </p>
+          </div>
           <button
             onClick={scrollToTop}
             className="w-10 h-10 bg-gold-500 hover:bg-gold-400 rounded-lg flex items-center justify-center transition-all hover:-translate-y-1 cursor-pointer"

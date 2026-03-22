@@ -128,8 +128,8 @@ export default function Hero() {
       </div>
 
       {/* Bottom wave */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 80" fill="none" className="w-full">
+      <div className="absolute bottom-0 left-0 right-0 -mb-px">
+        <svg viewBox="0 0 1440 80" fill="none" className="w-full block">
           <path
             d="M0 40L48 36C96 32 192 24 288 28C384 32 480 48 576 52C672 56 768 48 864 40C960 32 1056 24 1152 24C1248 24 1344 32 1392 36L1440 40V80H1392C1344 80 1248 80 1152 80C1056 80 960 80 864 80C768 80 672 80 576 80C480 80 384 80 288 80C192 80 96 80 48 80H0V40Z"
             fill="white"

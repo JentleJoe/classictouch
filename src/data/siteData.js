@@ -45,9 +45,8 @@ export const heroData = {
   description:
     'We merge engineering-level surface preparation with bespoke decorative finishes, delivering interiors and exteriors that are visually refined, structurally resilient, and built to perform in the Nigerian climate.',
   stats: [
-    { value: '—', label: 'Satisfied Customers' },
-    { value: '—', label: 'Projects Completed' },
-    { value: '—', label: 'Positive Reviews' },
+    { value: '100%', label: 'Good Feedback' },
+    { value: '90+', label: 'Projects Completed' },
   ],
 };
 

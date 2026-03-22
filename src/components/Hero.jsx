@@ -22,14 +22,14 @@ export default function Hero() {
 
       {/* Decorative circle */}
       {/* <div className="absolute -right-32 -top-32 w-[700px] h-[700px] bg-gold-500/10 rounded-full blur-3xl" /> */}
-
+3
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 lg:pt-40 lg:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Left content */}
           <div className="animate-fade-in-left">
-            <div className="inline-flex items-center gap-2 bg-gold-500/15 border border-gold-500/30 rounded-full px-4 py-1.5 mb-6">
-              <div className="w-2 h-2 bg-gold-400 rounded-full animate-pulse" />
-              <span className="text-gold-400 text-sm font-medium">
+            <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-8 backdrop-blur-sm">
+              <div className="w-1.5 h-1.5 bg-gold-400 rounded-full animate-pulse" />
+              <span className="text-white/80 text-sm font-medium tracking-wide">
                 {heroData.badge}
               </span>
             </div>

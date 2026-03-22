@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
 
       {/* Decorative circle */}
-      <div className="absolute -right-32 -top-32 w-[700px] h-[700px] bg-gold-500/10 rounded-full blur-3xl" />
+      {/* <div className="absolute -right-32 -top-32 w-[700px] h-[700px] bg-gold-500/10 rounded-full blur-3xl" /> */}
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 lg:pt-40 lg:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">

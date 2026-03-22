@@ -15,7 +15,7 @@ export default function PageHeader({ title, subtitle }) {
           }}
         />
       </div>
-      <div className="absolute -right-32 -top-32 w-[500px] h-[500px] bg-gold-500/10 rounded-full blur-3xl" />
+      
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Breadcrumb */}

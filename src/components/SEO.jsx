@@ -39,7 +39,14 @@ function upsertJsonLd(id, data) {
   element.textContent = JSON.stringify(data);
 }
 
-export default function SEO({ title, description, keywords = [], schema = [] }) {
+export default function SEO({
+  title,
+  description,
+  keywords = [],
+  image,
+  imageAlt,
+  schema = [],
+}) {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -62,8 +69,16 @@ export default function SEO({ title, description, keywords = [], schema = [] }) 
     upsertMeta('meta[property="og:description"]', 'property', 'og:description', description);
     upsertMeta('meta[property="og:type"]', 'property', 'og:type', 'website');
     upsertMeta('meta[property="og:url"]', 'property', 'og:url', canonicalUrl);
+    if (image) {
+      const imageUrl = new URL(image, siteUrl).toString();
+      upsertMeta('meta[property="og:image"]', 'property', 'og:image', imageUrl);
+      upsertMeta('meta[property="og:image:alt"]', 'property', 'og:image:alt', imageAlt ?? title);
+      upsertMeta('meta[name="twitter:card"]', 'name', 'twitter:card', 'summary_large_image');
+      upsertMeta('meta[name="twitter:image"]', 'name', 'twitter:image', imageUrl);
+    } else {
+      upsertMeta('meta[name="twitter:card"]', 'name', 'twitter:card', 'summary');
+    }
 
-    upsertMeta('meta[name="twitter:card"]', 'name', 'twitter:card', 'summary');
     upsertMeta('meta[name="twitter:title"]', 'name', 'twitter:title', title);
     upsertMeta('meta[name="twitter:description"]', 'name', 'twitter:description', description);
 
@@ -74,7 +89,7 @@ export default function SEO({ title, description, keywords = [], schema = [] }) 
     schema.forEach((item, index) => {
       upsertJsonLd(String(index), item);
     });
-  }, [pathname, title, description, keywords, schema]);
+  }, [pathname, title, description, keywords, image, imageAlt, schema]);
 
   return null;
 }

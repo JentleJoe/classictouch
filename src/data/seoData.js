@@ -30,6 +30,8 @@ const websiteSchema = {
     'Professional painting and wall finishing services in Benin City, Lagos, and across Nigeria.',
 };
 
+const defaultImage = '/og-image.svg';
+
 const routes = {
   '/': {
     title: 'Professional Painting in Benin, Lagos & Nigeria | Glacetouch',
@@ -43,6 +45,8 @@ const routes = {
       'wall screeding',
       'wallpaper installation',
     ],
+    image: defaultImage,
+    imageAlt: 'Glacetouch professional painting in Benin City, Lagos and Nigeria',
     schema: [websiteSchema, businessSchema],
   },
   '/about': {
@@ -55,6 +59,8 @@ const routes = {
       'painting company in Lagos',
       'wall finishing Nigeria',
     ],
+    image: defaultImage,
+    imageAlt: 'Glacetouch professional painting in Benin City, Lagos and Nigeria',
     schema: [websiteSchema, businessSchema],
   },
   '/services': {
@@ -68,6 +74,8 @@ const routes = {
       'wall screeding services',
       'wallpaper installation Nigeria',
     ],
+    image: defaultImage,
+    imageAlt: 'Glacetouch professional painting in Benin City, Lagos and Nigeria',
     schema: [websiteSchema, businessSchema],
   },
   '/portfolio': {
@@ -80,6 +88,8 @@ const routes = {
       'painting projects in Lagos',
       'decorative wall finishes portfolio',
     ],
+    image: defaultImage,
+    imageAlt: 'Glacetouch professional painting in Benin City, Lagos and Nigeria',
     schema: [websiteSchema, businessSchema],
   },
   '/contact': {
@@ -92,6 +102,8 @@ const routes = {
       'painting quotation Nigeria',
       'wall finishing contact',
     ],
+    image: defaultImage,
+    imageAlt: 'Glacetouch professional painting in Benin City, Lagos and Nigeria',
     schema: [websiteSchema, businessSchema],
   },
 };

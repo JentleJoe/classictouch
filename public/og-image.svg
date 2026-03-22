@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F172A"/>
+  <circle cx="1030" cy="120" r="220" fill="#F0B429" fill-opacity="0.12"/>
+  <circle cx="170" cy="520" r="180" fill="#F0B429" fill-opacity="0.08"/>
+  <rect x="74" y="74" width="1052" height="482" rx="36" stroke="#F0B429" stroke-opacity="0.28" stroke-width="2"/>
+  <text x="110" y="176" fill="#F0B429" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="4">GLACETOUCH</text>
+  <text x="110" y="284" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="700">Professional painting</text>
+  <text x="110" y="354" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="700">in Benin City, Lagos & Nigeria</text>
+  <text x="110" y="430" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="400">Decorative wall finishes, screeding, and wallpaper installation</text>
+  <rect x="110" y="486" width="190" height="10" rx="5" fill="#F0B429"/>
+</svg>

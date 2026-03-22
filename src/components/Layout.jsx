@@ -18,6 +18,8 @@ export default function Layout() {
         title={seo.title}
         description={seo.description}
         keywords={seo.keywords}
+        image={seo.image}
+        imageAlt={seo.imageAlt}
         schema={seo.schema}
       />
       <ScrollToTop />

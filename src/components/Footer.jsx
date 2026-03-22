@@ -61,7 +61,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
-              Engineered wall treatments, decorative finishes, and professional painting services across Nigeria — designed to inspire and built to endure.
+              Based in Benin City and Lagos, we deliver engineered wall treatments, decorative finishes, and professional painting services across Nigeria — designed to inspire and built to endure.
             </p>
 
             {/* Contact info */}

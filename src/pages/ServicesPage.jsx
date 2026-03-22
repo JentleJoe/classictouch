@@ -34,7 +34,7 @@ export default function ServicesPage() {
     <>
       <PageHeader
         title="Our Services"
-        subtitle="Professional painting and finishing services across Nigeria. We handle projects of every scale with precision and care."
+        subtitle="Professional painting and finishing services in Benin City, Lagos, and across Nigeria. We handle projects of every scale with precision and care."
       />
 
       {/* All Services */}
@@ -48,7 +48,7 @@ export default function ServicesPage() {
               Our <span className="text-gold-500">services</span>
             </h2>
             <p className="text-gray-500 leading-relaxed">
-              From interior painting to full exterior finishing, we provide a comprehensive range of services.
+              From Benin City to Lagos and nationwide, we provide a comprehensive range of painting and wall-finishing services.
             </p>
           </div>
 
@@ -189,7 +189,7 @@ export default function ServicesPage() {
               Where we <span className="text-gold-400">operate</span>
             </h2>
             <p className="text-white/50 leading-relaxed">
-              Glacetouch serves clients nationwide across all states in Nigeria. Contact us to confirm availability and timelines for your specific location.
+              Glacetouch serves clients in Benin City, Lagos, and nationwide across all states in Nigeria. Contact us to confirm availability and timelines for your specific location.
             </p>
           </div>
 

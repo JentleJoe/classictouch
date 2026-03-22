@@ -12,7 +12,7 @@ export const contactInfo = {
   whatsappLink:
     "https://wa.me/2348153018208?text=Hello%2C%20I%27m%20interested%20in%20your%20wall%20treatment%20and%20painting%20services.",
   email: 'glacetouch@yahoo.com',
-  address: 'Nigeria (mobile service across all states)',
+  address: 'Benin City & Lagos, Nigeria (mobile service across all states)',
   workingHours: 'Mon – Sat: 8:00 AM – 6:00 PM',
 };
 
@@ -42,7 +42,8 @@ export const heroData = {
     line2: 'space with a',
     highlight: 'Glacetouch',
   },
-  description: 'High quality, durable painting and wall finishes for homes and businesses.',
+  description:
+    'High quality, durable painting and wall finishes for homes and businesses in Benin City, Lagos, and across Nigeria.',
   stats: [
     { value: '100%', label: 'Good Feedback' },
     { value: '90+', label: 'Projects Completed' },
@@ -188,7 +189,7 @@ export const processSteps = [
 ];
 
 // ─── Service Areas ────────────────────────────────────────────
-export const serviceAreas = ['Nationwide – all states in Nigeria'];
+export const serviceAreas = ['Benin City', 'Lagos', 'Nationwide – all states in Nigeria'];
 
 // ─── Portfolio / Gallery (Placeholders) ───────────────────────
 export const portfolioItems = [

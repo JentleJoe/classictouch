@@ -12,7 +12,7 @@ export default function CTA() {
             Ready to transform your space?
           </h2>
           <p className="text-navy-950/70 mb-8 leading-relaxed max-w-xl mx-auto">
-            Get a free consultation and quotation. Let us apply our engineered aesthetics approach to your walls with precise wall treatments, decorative finishes, and professional painting.
+            Get a free consultation and quotation. Let us apply our engineered aesthetics approach to your walls in Benin City, Lagos, and nationwide with precise wall treatments, decorative finishes, and professional painting.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -63,7 +63,7 @@ export default function PortfolioPage() {
     <>
       <PageHeader
         title="Our Portfolio"
-        subtitle="Browse our recent projects and see the Glacetouch difference for yourself."
+        subtitle="Browse our recent professional painting projects in Benin City, Lagos, and across Nigeria."
       />
 
       {/* Portfolio Gallery */}

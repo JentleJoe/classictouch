@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight, Target, Eye, Award, Clock, TrendingUp, Shield } from 'lucide-react';
-import { aboutData, whyChooseUs, companyStats, teamMembers, contactInfo } from '../data/siteData';
+import { aboutData, whyChooseUs, contactInfo } from '../data/siteData';
 import PageHeader from '../components/Common/PageHeader';
 import WhatsAppIcon from '../components/Common/WhatsAppIcon';
 import aboutImg from '../assets/about-us.jpeg';
@@ -10,7 +10,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         title="About Us"
-        subtitle="Get to know Glacetouch — our story, our team, and our commitment to excellence."
+        subtitle="Get to know Glacetouch — our story, our team, and our commitment to professional painting in Benin City, Lagos, and across Nigeria."
       />
 
       {/* About Content */}
@@ -23,7 +23,8 @@ export default function AboutPage() {
                 <img
                   src={aboutImg}
                   alt="Glacetouch team at work"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full object-cover"
+                  style={{ height: '500px' }}
                 />
               </div>
               <div className="absolute top-6 -left-4 sm:-left-6 bg-gold-500 text-navy-950 rounded-2xl p-4 shadow-xl">

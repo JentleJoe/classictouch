@@ -9,7 +9,7 @@ export default function ContactPage() {
     <>
       <PageHeader
         title="Contact Us"
-        subtitle="Ready to transform your space? Get in touch for a free consultation and quotation."
+        subtitle="Ready to transform your space in Benin City, Lagos, or anywhere in Nigeria? Get in touch for a free consultation and quotation."
       />
 
       {/* Contact Actions */}
@@ -23,7 +23,7 @@ export default function ContactPage() {
               Choose your preferred <span className="text-gold-500">contact method</span>
             </h2>
             <p className="text-gray-500 leading-relaxed">
-              We reply fastest on WhatsApp, and you can also call or email us directly for consultations and quotations.
+              We reply fastest on WhatsApp, and you can also call or email us directly for consultations and quotations in Benin City, Lagos, and across Nigeria.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-bold text-navy-950 mb-2">Send an Email</h3>
               <p className="text-gray-600 text-sm mb-4">Share project details and we'll respond with next steps.</p>
-              <p className="text-navy-950 font-semibold text-sm break-words">{contactInfo.email}</p>
+              <p className="text-navy-950 font-semibold text-sm wrap-break-word">{contactInfo.email}</p>
               <p className="text-navy-600 text-xs font-bold mt-2 uppercase tracking-wider">Compose Email</p>
             </a>
           </div>
@@ -76,7 +76,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-2xl font-bold mb-3">Business Information</h3>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Available for residential and commercial projects across Nigeria. Reach out through any channel above and we will guide you from enquiry to execution.
+                  Available for residential and commercial projects in Benin City, Lagos, and across Nigeria. Reach out through any channel above and we will guide you from enquiry to execution.
                 </p>
               </div>
 

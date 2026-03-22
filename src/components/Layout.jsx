@@ -3,11 +3,23 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop';
 import WhatsAppIcon from './Common/WhatsAppIcon';
+import SEO from './SEO';
 import { contactInfo } from '../data/siteData';
+import { getSeoData } from '../data/seoData';
+import { useLocation } from 'react-router-dom';
 
 export default function Layout() {
+  const { pathname } = useLocation();
+  const seo = getSeoData(pathname);
+
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        keywords={seo.keywords}
+        schema={seo.schema}
+      />
       <ScrollToTop />
       <Navbar />
       <main className="flex-1">

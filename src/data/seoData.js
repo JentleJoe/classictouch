@@ -18,7 +18,7 @@ const businessSchema = {
     'Wallpaper installation',
     'Exterior and interior finishing',
   ],
-  sameAs: [socialLinks.instagram, socialLinks.tiktok].filter(Boolean),
+  sameAs: [socialLinks.instagram.url, socialLinks.tiktok.url].filter(Boolean),
 };
 
 const websiteSchema = {

@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone, PaintBucket } from 'lucide-react';
-import { navLinks, contactInfo } from '../data/siteData';
+import { Menu, X, Phone, PaintBucket, Instagram } from 'lucide-react';
+import { navLinks, contactInfo, socialLinks } from '../data/siteData';
 import WhatsAppIcon from './Common/WhatsAppIcon';
+import TikTokIcon from './Common/TikTokIcon';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -87,7 +88,7 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         <div
           className={`lg:hidden overflow-hidden transition-all duration-300 ${
-            isOpen ? 'max-h-[400px] mt-4' : 'max-h-0'
+            isOpen ? 'max-h-[1000px] mt-4' : 'max-h-0'
           }`}
         >
           <div className="bg-navy-900/95 backdrop-blur-md rounded-xl p-4 space-y-1">
@@ -121,6 +122,28 @@ export default function Navbar() {
                 <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
                 <span className="text-sm">WhatsApp Us</span>
               </a>
+              <div className="flex px-4 py-2">
+                <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl p-2">
+                  <a
+                    href={socialLinks.instagram.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-lg flex items-center justify-center transition-transform hover:scale-105 bg-gradient-to-tr from-[#f58529] via-[#dd2a7b] to-[#515bd4]"
+                    title="Instagram"
+                  >
+                    <Instagram className="w-5 h-5 text-white" />
+                  </a>
+                  <a
+                    href={socialLinks.tiktok.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-lg flex items-center justify-center transition-transform hover:scale-105 bg-black shadow-[0_0_0_2px_#25F4EE,0_0_0_4px_#FE2C55]"
+                    title="TikTok"
+                  >
+                    <TikTokIcon className="w-5 h-5 text-white" />
+                  </a>
+                </div>
+              </div>
               <Link
                 to="/contact"
                 className="block text-center bg-gold-500 text-navy-950 px-6 py-2.5 rounded-lg text-sm font-bold"

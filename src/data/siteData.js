@@ -18,11 +18,14 @@ export const contactInfo = {
 
 // ─── Social Media Links ───────────────────────────────────────
 export const socialLinks = {
-  facebook: '#',
-  instagram: 'https://www.instagram.com/Victor_classic_touch',
-  twitter: '#',
-  linkedin: '#',
-  tiktok: 'https://www.tiktok.com/@usiagu',
+  instagram: {
+    url: 'https://www.instagram.com/Victor_classic_touch',
+    handle: '@Victor_classic_touch',
+  },
+  tiktok: {
+    url: 'https://www.tiktok.com/@usiagu',
+    handle: '@usiagu',
+  },
 };
 
 // ─── Navigation ───────────────────────────────────────────────

@@ -1,10 +1,7 @@
 import { Link } from 'react-router-dom';
 import {
   PaintBucket,
-  Facebook,
-  Twitter,
   Instagram,
-  Linkedin,
   MapPin,
   Phone,
   Mail,
@@ -12,6 +9,7 @@ import {
 } from 'lucide-react';
 import { contactInfo, socialLinks } from '../data/siteData';
 import WhatsAppIcon from './Common/WhatsAppIcon';
+import TikTokIcon from './Common/TikTokIcon';
 
 const quickLinks = [
   { name: 'Home', path: '/' },
@@ -35,10 +33,24 @@ const legalLinks = [
 ];
 
 const socials = [
-  { icon: Facebook, href: socialLinks.facebook },
-  { icon: Twitter, href: socialLinks.twitter },
-  { icon: Instagram, href: socialLinks.instagram },
-  { icon: Linkedin, href: socialLinks.linkedin },
+  {
+    icon: Instagram,
+    href: socialLinks.instagram.url,
+    label: 'Instagram',
+    handle: socialLinks.instagram.handle,
+    bgClass: 'bg-gradient-to-tr from-[#f58529] via-[#dd2a7b] to-[#515bd4]',
+    iconClass: 'text-white',
+    ringClass: '',
+  },
+  {
+    icon: TikTokIcon,
+    href: socialLinks.tiktok.url,
+    label: 'TikTok',
+    handle: socialLinks.tiktok.handle,
+    bgClass: 'bg-black',
+    iconClass: 'text-white',
+    ringClass: 'shadow-[0_0_0_2px_#25F4EE,0_0_0_4px_#FE2C55]',
+  },
 ];
 
 export default function Footer() {
@@ -97,9 +109,10 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-white/5 hover:bg-gold-500 rounded-lg flex items-center justify-center transition-all hover:-translate-y-0.5"
+                  className={`w-9 h-9 rounded-lg flex items-center justify-center transition-all hover:-translate-y-0.5 ${social.bgClass} ${social.ringClass}`}
+                  title={social.label}
                 >
-                  <social.icon className="w-4 h-4 text-white" />
+                  <social.icon className={`w-4 h-4 ${social.iconClass}`} />
                 </a>
               ))}
             </div>

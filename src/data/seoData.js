@@ -1,7 +1,7 @@
 import { contactInfo, socialLinks } from './siteData';
 
 export const siteName = 'Glacetouch';
-export const siteUrl = 'https://glacetouch.com';
+export const siteUrl = 'https://glacetouchgroup.com';
 
 const businessSchema = {
   '@context': 'https://schema.org',

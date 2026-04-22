@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://glacetouchgroup.com/sitemap.xml

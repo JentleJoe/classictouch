@@ -19,7 +19,7 @@ export const contactInfo = {
 // ─── Social Media Links ───────────────────────────────────────
 export const socialLinks = {
   instagram: {
-    url: 'https://www.instagram.com/Victor_classic_touch',
+    url: 'https://www.instagram.com/glacetouch.ng',
     handle: '@Victor_classic_touch',
   },
   tiktok: {

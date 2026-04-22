@@ -1,6 +1,7 @@
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-import { contactInfo } from '../data/siteData';
+import { Phone, Mail, MapPin, Clock, Instagram } from 'lucide-react';
+import { contactInfo, socialLinks } from '../data/siteData';
 import WhatsAppIcon from '../components/Common/WhatsAppIcon';
+import TikTokIcon from '../components/Common/TikTokIcon';
 import PageHeader from '../components/Common/PageHeader';
 import FAQ from '../components/FAQ';
 
@@ -68,6 +69,37 @@ export default function ContactPage() {
               <p className="text-navy-950 font-semibold text-sm wrap-break-word">{contactInfo.email}</p>
               <p className="text-navy-600 text-xs font-bold mt-2 uppercase tracking-wider">Compose Email</p>
             </a>
+          </div>
+
+          <div className="bg-linear-to-r from-navy-950 to-navy-900 rounded-2xl p-6 sm:p-8 mb-14 text-white">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+              <div>
+                <p className="text-xs uppercase tracking-wider text-white/60 mb-2">Social Media</p>
+                <h3 className="text-xl sm:text-2xl font-bold">See our latest projects and finishes</h3>
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={socialLinks.instagram.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 transition-colors"
+                >
+                  <Instagram className="w-5 h-5" />
+                  <span className="text-sm font-semibold">Instagram</span>
+                </a>
+
+                <a
+                  href={socialLinks.tiktok.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 transition-colors"
+                >
+                  <TikTokIcon className="w-5 h-5" />
+                  <span className="text-sm font-semibold">TikTok</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="bg-navy-950 rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden">
